@@ -1,0 +1,258 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+#nav-items {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+}
+
+.nav-text {
+  text-decoration: none;
+  color: white;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: .9rem;
+  transition: all 150ms ease-out;
+}
+
+.nav-text:hover {
+  color: #2c56fc;
+}
+
+.active {
+  background-color: #2c56fc;
+  padding: 3px 16px;
+  border-radius: 20px;
+}
+
+.active:hover {
+  color: white;
+}
+
+#Projects-page-title {
+  color: whitesmoke;
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: Montserrat;
+  text-decoration: underline;
+  font-size: 1.5em;
+  animation: text-animation;
+  animation-duration: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  transition: ease-in-out;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.project {
+  height: 50vh;
+  width: auto;
+  cursor: pointer;
+  width: 85%;
+}
+
+#one {
+  margin: 0 auto;
+  background-image: url('../img/quizer.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#two {
+  margin: 0 auto;
+  background-image: url('../img/lyrical.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-delay: 1s;
+}
+
+#three {
+  margin: 2em auto;
+  background-image: url('../img/Capture.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-project {
+  font-family: poppins;
+  font-size: 13px;
+  padding: 2em;
+  margin: 3em auto;
+  margin-bottom: 3em;
+  color: white;
+  text-align: justify;
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.github-btn,
+.app-btn {
+  padding: 10px;
+  margin-right: 2em;
+  border-radius: 10px;
+  background: none;
+  color: whitesmoke;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.github-btn {
+  border: 1px #2c56fc solid;
+  transition: all 300ms linear;
+}
+
+.github-btn:hover {
+  background-color: #2c56fc;
+}
+
+.github-btn:active {
+  background-color: #2c56fc;
+}
+
+.app-btn {
+  border: 1px #ff056b solid;
+  transition: all 300ms linear;
+}
+
+.app-btn:hover {
+  background-color: #ff056b;
+}
+
+.app-btn:active {
+  background-color: #ff056b;
+}
+
+@media (min-width: 768px) {
+
+  #nav-bar {
+    text-align: right;
+    margin-right: 2em;
+  }
+
+  #Projects-page-title {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 4em;
+    text-decoration: underline;
+  }
+
+  #one,
+  #two,
+  #three {
+    width: 75%;
+  }
+
+  #three {
+    margin: 4em auto;
+  }
+
+  .about-project {
+    width: 70%;
+    margin-top: 5em;
+    font-size: 20px;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #nav-bar {
+    margin-right: 6em;
+    margin-top: 2em;
+  }
+
+  .nav-text {
+    font-size: .9rem;
+  }
+
+  .about-project {
+    font-size: 25px;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  #nav-bar {
+    text-align: right;
+    margin-right: 7em;
+    margin-top: 2em;
+  }
+
+  #Projects-page-title {
+    margin-bottom: 2em;
+  }
+
+  .project {
+    height: 80vh;
+    width: 50%;
+  }
+
+  #two,
+  #three,
+  #one {
+    width: 45%;
+  }
+
+  #two {
+    height: 70vh;
+  }
+
+  .about-project {
+    margin-top: 11em;
+    margin-bottom: 3em;
+    font-size: 16px;
+    padding: 1em;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

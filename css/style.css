@@ -250,7 +250,7 @@ body {
   content: "▹";
   position: relative;
   top: 0;
-  left: -5px;
+  left: 0px;
   color: #2c56ff;
   font-size: 25px;
   line-height: 12px;

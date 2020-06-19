@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="css/style.css" />
@@ -13,64 +13,115 @@
 
 <body>
   <nav id="nav-bar">
+    <span class="open-slide">
+      <a id="ham-link" href="#">
+        <img id="hamburger" src="img/ham.png" alt="">
+      </a>
+    </span>
     <ul id="nav-items">
       <li class="nav-item">
-        <a href="#" class="nav-text active" id="home">
+        <a class="nav-text active" href="#">
           home
         </a>
       </li>
-
       <li class="nav-item">
-        <a href="projects/projects.html" class="nav-text" id="projects">
-          projects
+        <a class="nav-text" href="#about">
+          about
         </a>
       </li>
-
       <li class="nav-item">
-        <a href="about/about.html" class="nav-text" id="about">
-          about
+        <a class="nav-text" href="">
+          projects
         </a>
       </li>
     </ul>
   </nav>
 
-  <div id="main-area-container" data-aos="zoom-in">
-    <h3 id="intro">Hi, my name is</h3>
-    <h1 id="name">Musaib Malik.<br /></h1>
-    <h1 id="subtitle">I build things for the web.</h1>
-    <p id="description">
-      I am a self-taught Front-End Web Developer based in India specializing in building and occasionally designing
-      simple yet
-      elegant websites and applications.
-    </p>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close">&times;</a>
+    <ul id="side-menu-items">
+
+      <li class="side-menu-item">
+        <a href="#about" class="side-menu-text">
+          <span class="serial-number" id="side-serial-number">01. <br>
+          </span>
+          About</a>
+      </li>
+
+      <li class="side-menu-item">
+        <a href="#" class="side-menu-text">
+
+          <span class="serial-number" id="side-serial-number">02. <br>
+          </span>
+
+          Projects</a>
+      </li>
+    </ul>
   </div>
 
-  <ul class="icons-container">
-    <li class="media-icon" id="github">
-      <a href="https://github.com/Musaib-Malik?tab=repositories" target="_blank" class="social-media git">
-        <i class="fa fa-github" area-hidden="true"></i>
-      </a>
+  <section class="main-area-container">
+    <h1 id="my-name">Hi, my name is</h1>
+    <h1 id="name">Musaib Malik.</h1>
+    <h3 id="occupation">
+      I build great experiences.
+    </h3>
+
+    <p id="description">
+      I am a Front-End web developer based in India who is passionate for building things and make them live on the
+      internet.
+    </p>
+
+    <a href="mailto:atomicsight809@gmail.com" id="get-in-touch-btn">Get In Touch</a>
+  </section>
+
+  <ul class="social-media-icons">
+    <li class="icon">
+      <i class="fa fa-github"></i>
+    </li>
+    <li class="icon">
+      <i class="fa fa-linkedin"></i>
+    </li>
+    <li class="icon">
+      <i class="fa fa-instagram"></i>
+    </li>
+    <li class="icon">
+      <i class="fa fa-twitter"></i>
     </li>
 
-    <li class="media-icon" id="instagram">
-      <a href="https://www.instagram.com/musaib___malik/" class="social-media" target="_blank">
-        <i class="fa fa-instagram" area-hidden="true"></i>
-      </a>
-    </li>
+    <div id="vertical-line"></div>
 
-    <li class="media-icon" id="twitter">
-      <a href="https://twitter.com/SightAtomic" class="social-media" target="_blank">
-        <i class="fa fa-twitter" area-hidden="true"></i>
-      </a>
-    </li>
   </ul>
 
-  <!-- Animate On Scroll Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-  </script>
-  <script type="text/javascript">
-    AOS.init();
-  </script>
+
+  <section class="gap">
+    <h1 id="about" class="subtitle"> <span class="serial-number">01. </span> About Me
+    </h1>
+
+    <div id="about-me">
+      <div id="content-container">
+        <p id="first-para"> Hi, I'm Musaib, a Front-End Web Developer based in India. </p>
+
+
+        <p id="second-para">
+          I love building websites and applications. I have
+          short but solid experience with Front-End technologies. Here are some technologies i have been working with
+          recently:
+        </p>
+
+        <ul id="technologies">
+          <li class="tech">HTML5 & CSS3</li>
+          <li class="tech">JavaScript (ES6+)</li>
+        </ul>
+      </div>
+
+      <div id="image-container">
+        <img id="personal-image" src="img/my-img.jpg" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/app.js"></script>
 </body>
 
 </html>

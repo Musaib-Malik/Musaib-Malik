@@ -494,12 +494,13 @@ body {
     margin-top: 47em;
   }
 
-  #first-para {
-    width: 50%;
+  #about-me > #first-para {
+    width: 35%;
+    line-height: 25px;
   }
 
   #about-me > #second-para {
-    line-height: 42px;
+    line-height: 37px;
     width: 45%;
   }
 

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -36,14 +36,15 @@ body {
   font-size: 1rem;
   text-decoration: none;
   color: #aab5d5;
-  ;
   font-family: Poppins;
   font-weight: 600;
   transition: all 200ms linear;
+  margin: 0;
 }
 
 .nav-text:hover {
   color: white;
+  font-size: 18px;
 }
 
 .active {
@@ -51,6 +52,10 @@ body {
   padding: 3px 20px;
   border-radius: 20px;
   color: white;
+}
+
+.active:hover {
+  font-size: 1rem;
 }
 
 #hamburger {
@@ -70,8 +75,7 @@ body {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color:
-    #070718;
+  background-color: #070718;
   visibility: hidden;
   z-index: 4;
 }
@@ -113,7 +117,7 @@ body {
 .side-menu-text {
   color: #aab5d5;
   text-decoration: none;
-  font-family: 'roboto Mono';
+  font-family: "roboto Mono";
   font-weight: bolder;
   transition: all 200ms linear;
 }
@@ -144,7 +148,7 @@ body {
 }
 
 #name {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #ccd6f6;
   font-size: 2.5rem;
   margin-bottom: 5px;
@@ -153,7 +157,7 @@ body {
 
 #occupation {
   font-family: Calibri;
-  color: #8892B0;
+  color: #8892b0;
   margin-bottom: 35px;
   font-size: 1.7rem;
   font-weight: bolder;
@@ -162,7 +166,7 @@ body {
 #description {
   font-family: Calibri;
   width: 95%;
-  color: #8892B0;
+  color: #8892b0;
   line-height: 1.7rem;
   margin-bottom: 4em;
 }
@@ -213,25 +217,22 @@ body {
   margin-right: 10px;
 }
 
-#about-me {
-  display: flex;
-  flex-direction: column;
-}
-
-#content-container>p {
-  line-height: 24px;
-  color: #8892b0;
+#about-me > p {
+  line-height: 33px;
+  color: #8890d4;
   font-size: 18px;
   font-family: Calibri;
 }
 
 #first-para {
-  margin-bottom: 1.4em;
+  margin-bottom: 0.5em;
   margin-right: 10px;
+  width: 94.5%;
 }
 
 #second-para {
   margin-right: 1em;
+  width: 90%;
 }
 
 #technologies {
@@ -242,30 +243,23 @@ body {
 .tech {
   line-height: 30px;
   font-family: calibri;
-  color: #8892b0;
+  color: #8892d0;
 }
 
 .tech::before {
   content: "▹";
   position: relative;
   top: 0;
-  left: 0px;
+  left: -7px;
   color: #2c56ff;
-  font-size: 19px;
+  font-size: 25px;
   line-height: 12px;
   margin-right: 10px;
 }
 
-#image-container {
-  text-align: center;
-  margin-top: 2em;
-  margin-right: 2.5em;
-}
-
-#personal-image {
-  width: 50%;
-  height: auto;
-  border-radius: 5px;
+.second-gap {
+  color: white;
+  margin-top: 70em;
 }
 
 /* Media Queries */
@@ -346,13 +340,17 @@ body {
     width: 90%;
   }
 
+  #first-para {
+    width: 80%;
+  }
+
   #second-para {
     width: 75%;
   }
 
-  #content-container>p {
+  #about-me > p {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 36px;
   }
 
   .tech {
@@ -362,14 +360,9 @@ body {
   #side-serial-number {
     font-size: 22px;
   }
-
-  #personal-image {
-    width: 40%;
-  }
 }
 
 @media (min-width: 1024px) {
-
   #hamburger {
     display: none;
   }
@@ -411,7 +404,7 @@ body {
   }
 
   #vertical-line {
-    border-left: 2px #8892B0 solid;
+    border-left: 2px #8892b0 solid;
     width: 2px;
     height: 6.5vh;
     margin-left: 8px;
@@ -425,7 +418,7 @@ body {
   }
 
   .fa {
-    color: #8892B0;
+    color: #8892b0;
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 200ms linear;
@@ -437,28 +430,31 @@ body {
     font-size: 1.7rem;
   }
 
-  #about-me {
-    flex-direction: row;
-    width: 100%;
+  #about-me > p {
+    line-height: 40px;
+    font-size: 24px;
   }
 
-  #personal-image {
-    height: auto;
-    width: 40%;
-  }
-
-  #image-container {
-    margin-top: 0;
-    margin-right: 0;
+  #first-para {
+    width: 60%;
   }
 
   #second-para {
-    width: 100%;
+    width: 70%;
   }
 
   .gap {
     margin-top: 66em;
     left: 18%;
+  }
+
+  .tech {
+    font-size: 24px;
+    line-height: 46px;
+  }
+
+  .tech::before {
+    font-size: 35px;
   }
 }
 
@@ -479,7 +475,7 @@ body {
 
   #description {
     width: 45%;
-    font-size: 18px;
+    font-size: 21px;
   }
 
   #get-in-touch-btn {
@@ -498,17 +494,21 @@ body {
     margin-top: 47em;
   }
 
-  #image-container {
-    position: relative;
+  #first-para {
+    width: 50%;
   }
 
-  #personal-image {
-    position: relative;
-    bottom: 14%;
+  #about-me > #second-para {
+    line-height: 42px;
+    width: 45%;
   }
 
-  #content-container>#second-para {
-    line-height: 39px;
+  #about-me > p {
+    font-size: 18px;
+  }
+
+  .tech {
+    font-size: 18px;
   }
 }
 
@@ -519,17 +519,16 @@ body {
   }
 
   100% {
-    width: 55%;
+    width: 60%;
   }
 }
 
 @keyframes closing-animation {
   0% {
-    width: 55%;
+    width: 60%;
   }
 
   100% {
     width: 0%;
-
   }
 }

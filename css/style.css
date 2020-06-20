@@ -275,7 +275,7 @@ body {
 }
 
 .gird-project {
-  height: 66vh;
+  height: auto;
   width: auto;
   background: red;
   border-radius: 5px;
@@ -358,7 +358,7 @@ body {
   background-repeat: no-repeat;
   text-align: left;
   padding-left: 1em;
-  height: 55vh;
+
 }
 
 #second-grid-project>ul {
@@ -374,7 +374,7 @@ body {
   background-repeat: no-repeat;
   text-align: right;
   padding-right: 1em;
-  height: 60vh;
+
 }
 
 /* Media Queries */

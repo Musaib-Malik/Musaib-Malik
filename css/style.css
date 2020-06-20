@@ -284,8 +284,8 @@ body {
 }
 
 #first-grid-project {
-  background: url('../img/quiz.PNG');
-  background-color: rgba(0, 0, 0, 0.8);
+  background: url('../thumbs/1.jpg');
+  background-color: rgba(0, 0, 0, 0.9);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -350,7 +350,7 @@ body {
 }
 
 #second-grid-project {
-  background: url('../img/lyrical.PNG');
+  background: url('../thumbs/10.jpg');
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
   background-position: center;
@@ -366,7 +366,7 @@ body {
 }
 
 #third-grid-project {
-  background: url('../img/todo.PNG');
+  background: url('../thumbs/4.jpg');
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
   background-position: center;

@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #111;
+  background-color: #000;
 }
 
 #nav-bar {
@@ -68,6 +68,7 @@ body {
 
 #ham-link {
   text-decoration: none;
+  outline: none;
 }
 
 #side-menu {
@@ -75,7 +76,7 @@ body {
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #070718;
+  background-color: #001f40;
   visibility: hidden;
   z-index: 4;
 }
@@ -98,6 +99,7 @@ body {
   top: 10px;
   right: 30px;
   font-weight: bolder;
+  outline: none;
 }
 
 #side-menu-items {
@@ -197,7 +199,7 @@ body {
 
 .gap {
   color: white;
-  margin-top: 39em;
+  margin-top: 35em;
   overflow: hidden;
   position: absolute;
   left: 7%;
@@ -217,7 +219,7 @@ body {
   margin-right: 10px;
 }
 
-#about-me > p {
+#about-me>p {
   line-height: 32px;
   color: #8892b0;
   font-size: 18px;
@@ -258,8 +260,121 @@ body {
 }
 
 .second-gap {
+  margin-top: 74em;
+  position: absolute;
+  left: 7%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 80vh;
+  width: auto;
+  grid-gap: 1.5em;
   color: white;
-  margin-top: 80em;
+}
+
+.gird-project {
+  height: 66vh;
+  width: auto;
+  background: red;
+  border-radius: 5px;
+  margin: 2em;
+  border-bottom: 1px white solid;
+}
+
+#first-grid-project {
+  background: url('../img/quiz.PNG');
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.project-title {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #ccd6f6;
+  font-family: Calibri;
+}
+
+.project-description {
+  line-height: 28px;
+  font-family: Calibri;
+  color: #a8b2d1;
+
+}
+
+.tech-stack-used {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  color: #aff0d1;
+}
+
+.tech-stack-item:nth-child(1),
+.tech-stack-item:nth-child(2) {
+  margin-right: 10px;
+}
+
+.tech-stack-item {
+  font-family: roboto mono;
+  font-size: 13px;
+}
+
+.external-links {
+  margin-top: 1.8em;
+}
+
+.external-links-link {
+  color: #ccd6f6;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+  text-decoration: none;
+  outline: none;
+}
+
+.external-links-link:first-child {
+  margin-right: .5em;
+  font-size: 1.8rem;
+}
+
+.external-links-link:hover {
+  color: white;
+}
+
+#second-grid-project {
+  background: url('../img/lyrical.PNG');
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-left: 1em;
+  height: 55vh;
+}
+
+#second-grid-project>ul {
+  justify-content: flex-start;
+}
+
+#third-grid-project {
+  background: url('../img/todo.PNG');
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  padding-right: 1em;
+  height: 60vh;
 }
 
 /* Media Queries */
@@ -348,7 +463,7 @@ body {
     width: 75%;
   }
 
-  #about-me > p {
+  #about-me>p {
     font-size: 22px;
     line-height: 36px;
   }
@@ -430,7 +545,7 @@ body {
     font-size: 1.7rem;
   }
 
-  #about-me > p {
+  #about-me>p {
     line-height: 40px;
     font-size: 24px;
   }
@@ -494,17 +609,17 @@ body {
     margin-top: 47em;
   }
 
-  #about-me > #first-para {
+  #about-me>#first-para {
     width: 35%;
-    line-height: 25px;
+    line-height: 33px;
   }
 
-  #about-me > #second-para {
+  #about-me>#second-para {
     line-height: 37px;
     width: 45%;
   }
 
-  #about-me > p {
+  #about-me>p {
     font-size: 18px;
   }
 
@@ -520,13 +635,13 @@ body {
   }
 
   100% {
-    width: 60%;
+    width: 65%;
   }
 }
 
 @keyframes closing-animation {
   0% {
-    width: 60%;
+    width: 65%;
   }
 
   100% {

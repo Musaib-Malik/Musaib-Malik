@@ -13,6 +13,29 @@ function openSlideMenu() {
   sideMenu.style.visibility = "visible";
   sideMenu.classList.remove("animate-side-menu-closing");
   sideMenu.classList.add("animate-side-menu-opening");
+  sideMenu.innerHTML = `
+  <a href="#" class="btn-close">&times;</a>
+  <ul id="side-menu-items">
+    <li class="side-menu-item">
+      <a href="#about" class="side-menu-text">
+        <span class="serial-number" id="side-serial-number"
+          >01. <br />
+        </span>
+        About</a
+      >
+    </li>
+
+    <li class="side-menu-item">
+      <a href="#projects" class="side-menu-text">
+        <span class="serial-number" id="side-serial-number"
+          >02. <br />
+        </span>
+
+        Projects</a
+      >
+    </li>
+  </ul>
+  `
 }
 
 // Close Hamburger Menu

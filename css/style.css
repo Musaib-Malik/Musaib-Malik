@@ -19,6 +19,10 @@ body {
   background-color: #000;
 }
 
+a {
+  text-decoration: none;
+}
+
 #nav-bar {
   margin: 0;
   height: 20vh;
@@ -376,7 +380,41 @@ body {
   padding-right: 1em;
 }
 
-/* Media Queries */
+#footer-links-for-mobile {
+  margin-top: 155em;
+  height: 13vh;
+  color: red;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-link {
+  margin-right: 1.5em;
+  transition: all 350ms linear;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.footer-link>a {
+  color: #8892b0;
+}
+
+#developer-name {
+  text-align: center;
+  margin-top: 1em;
+  font-family: roboto mono;
+  color: #8892b0;
+  font-size: 18px;
+}
+
+/*/ Media Queries */
 @media (max-width: 380px) {
   .main-area-container {
     width: 95%;
@@ -455,11 +493,11 @@ body {
   }
 
   #first-para {
-    width: 80%;
+    width: 90%;
   }
 
   #second-para {
-    width: 75%;
+    width: 85%;
   }
 
   #about-me>p {
@@ -496,6 +534,10 @@ body {
   .project-description {
     font-size: 1.2rem;
     line-height: 34px;
+  }
+
+  #footer-links-for-mobile {
+    margin-top: 160em;
   }
 }
 
@@ -626,6 +668,10 @@ body {
 
   .external-links-link:first-child {
     margin-right: .8em;
+  }
+
+  #footer-links-for-mobile {
+    display: none;
   }
 }
 
